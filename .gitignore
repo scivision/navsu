@@ -22,3 +22,4 @@ data/
 .DS_Store
 *.bak
 *.m~
+*.sp3*
