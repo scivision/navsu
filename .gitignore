@@ -23,3 +23,5 @@ data/
 *.bak
 *.m~
 *.sp3*
+.buildtool/
+reports/
