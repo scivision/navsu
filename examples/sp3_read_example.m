@@ -1,7 +1,7 @@
 sp3_fn = 'igs19362.sp3c';
 if ~isfile(sp3_fn)
   url = 'https://raw.githubusercontent.com/geospace-code/georinex/refs/heads/main/src/georinex/tests/data/igs19362.sp3c';
-  websave(sp3_fn, url);
+  sp3_fn = websave(sp3_fn, url);
 end
 
 dat = navsu.readfiles.readSp3(sp3_fn);

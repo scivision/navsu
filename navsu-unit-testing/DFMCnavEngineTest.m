@@ -1,4 +1,5 @@
-classdef DFMCnavEngineTest < matlab.unittest.TestCase
+classdef (SharedTestFixtures={ matlab.unittest.fixtures.PathFixture(fileparts(fileparts(mfilename('fullpath'))))}) ...
+        DFMCnavEngineTest < matlab.unittest.TestCase
     % Unittest class for the DFMCnavEngine
     %   Runs a bank of unit tests for the DFMCnavEngine class.
 
