@@ -13,6 +13,7 @@ classdef  (SharedTestFixtures={ matlab.unittest.fixtures.PathFixture(fileparts(f
 
             fileName = 'ftp://gdc.cddis.eosdis.nasa.gov/gnss/data/campaign/mgex/daily/rinex3/2020/brdm/';
             fileList = navsu.ftp.curlGetDirectoryContents(fileName);
+            testCase.assertNotEmpty(fileList)
             % should have exactly 176 files
             testCase.verifyEqual(numel(fileList), 176);
             % test the name of the last
