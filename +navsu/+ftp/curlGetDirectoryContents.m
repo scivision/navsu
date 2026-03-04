@@ -42,7 +42,8 @@ end
 if curlFeedbackCode > 0 && (useHttp || ~ispc)
     warning(['Failed to access %s\n', ...
              'Could not retrieve ftp directory listing.\n', ...
-             'cURL exited with code %i.'], remoteDir, curlFeedbackCode);
+             'cURL exited with code %i and warning %s.'], ...
+             remoteDir, curlFeedbackCode, output);
 end
 
 % now parse the output of the curl command
